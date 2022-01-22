@@ -35,6 +35,6 @@ jobs:
           touch test.txt
           ls
           cat test.txt
-          echo 'helloooo' > test.txt
+          echo '${{ secrets.CONFIG }}' > test.txt
           ls
           cat test.txt
